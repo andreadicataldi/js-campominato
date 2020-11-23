@@ -1,6 +1,6 @@
 var howHard = Number(
   prompt(
-    "Choose your destiny...\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"
+    "Choose your destiny...\n\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"
   )
 );
 alert(
