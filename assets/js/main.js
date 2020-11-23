@@ -3,13 +3,12 @@ var howHard = Number(
     "Choose your destiny...\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"
   )
 );
-var x = 100;
 if (howHard == 0) {
-  x == 100;
+  x = 100;
 } else if (howHard == 1) {
-  x == 80;
+  x = 80;
 } else if (howHard == 2) {
-  x == 50;
+  x = 50;
 } else {
   alert("Devi inserire un valore tra 0 e 2.");
 }
@@ -24,7 +23,7 @@ console.log(rndNumbers);
 var userArray = [];
 for (let i = 0; i <= 84; i++) {
   var userNumber = Number(
-    prompt("Inserisci un numero da 1 a 100 che non hai ancora inserito.")
+    prompt("Inserisci un numero da 1 a " + x + " che non hai ancora inserito.")
   );
   userArray.push(userNumber);
   if (rndNumbers.includes(userNumber)) {
