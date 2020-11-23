@@ -33,9 +33,9 @@ for (let i = 0; i <= 84; i++) {
     alert("Hai perso.");
     alert(
       "Il tuo punteggio è: " +
-        (userArray.length - 1) +
+        userArray.length +
         " / 16\nPercentuale di completamento: " +
-        ((userArray.length - 1) / 16) * 100 +
+        (userArray.length / 16) * 100 +
         "%"
     );
     alert('Le "mine" del computer erano: ' + rndNumbers.join(" "));
@@ -45,9 +45,9 @@ for (let i = 0; i <= 84; i++) {
     alert("Hai vinto!");
     alert(
       "Il tuo punteggio è: " +
-        (userArray.length - 1) +
+        userArray.length +
         " / 16\nPercentuale di completamento: " +
-        ((userArray.length - 1) / 16) * 100 +
+        (userArray.length / 16) * 100 +
         "%"
     );
     alert('Le "mine" del computer erano: ' + rndNumbers.join(" "));
