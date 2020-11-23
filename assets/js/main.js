@@ -1,3 +1,4 @@
+//Genero 16 numeri casuali tra 1 e 100 senza duplicati
 var rndNumbers = [];
 while (rndNumbers.length < 16) {
   var i = Math.floor(Math.random() * 100) + 1;
@@ -5,7 +6,20 @@ while (rndNumbers.length < 16) {
 }
 console.log(rndNumbers);
 
-/* for (i = 0; promptedNumber != rndNumbers[i]; i++) {
-  const element = array[i];
-  
-} */
+var userNumber = 0;
+var userArray = [];
+
+while (!(rndNumbers.includes(userNumber))) {
+  userNumber = Number(prompt("Inserisci un numero compreso tra 1 e 100."));
+  if (rndNumbers.includes(userNumber)) {
+    alert("Hai perso!");
+    alert("Il tuo punteggio finale è: " + userArray.length);
+  }
+  userArray.push(userNumber);
+  userArray.length == 16;
+}
+
+if (userArray.length == 16) {
+  alert("Hai vinto!")
+  alert("Il tuo punteggio finale è: " + userArray.length);
+}
