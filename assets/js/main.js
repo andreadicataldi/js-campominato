@@ -30,10 +30,12 @@ for (let i = 0; i <= 84; i++) {
   if (rndNumbers.includes(userNumber)) {
     alert("Hai perso.");
     alert("Il tuo punteggio è: " + userArray.length + " / 16");
+    alert("Le \"mine\" del computer erano: " + rndNumbers.join(" "));
     break;
   }
   if (userArray.length == 16) {
     alert("Hai vinto!");
     alert("Il tuo punteggio è: " + userArray.length + " / 16");
+    alert('Le "mine" del computer erano: ' + rndNumbers.join(" "));
   }
 }
