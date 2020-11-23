@@ -1,8 +1,4 @@
-var howHard = Number(
-  prompt(
-    "Choose your destiny...\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"
-  )
-);
+var howHard = Number(prompt("Choose your destiny...\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"));
 var x = 100;
 if (howHard == 0) {
   x == 100;
@@ -12,7 +8,9 @@ if (howHard == 0) {
   x == 50;
 } else {
   alert("Devi inserire un valore tra 0 e 2.");
+  window.location.reload();
 }
+
 
 var rndNumbers = [];
 while (rndNumbers.length < 16) {
