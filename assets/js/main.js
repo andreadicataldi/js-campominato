@@ -3,6 +3,7 @@ var howHard = Number(
     "Choose your destiny...\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"
   )
 );
+alert("Lo scopo del gioco è inserire un numero cercando di evitare le 16 \"mine\" numeriche piazzate dal computer.\nNon è possibile inserire un numero già inserito in precedenza.\nBuona fortuna!")
 if (howHard == 0) {
   x = 100;
 } else if (howHard == 1) {
