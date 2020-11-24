@@ -32,13 +32,13 @@ for (var i = 0; userArray.length < 84; i++) {
   var userNumber = Number(
     prompt("Inserisci un numero da 1 a " + x + " che non hai ancora inserito.")
   );
-  if (!userArray.includes(userNumber) && userNumber < x && userNumber > 0) {
+  if (!userArray.includes(userNumber) && userNumber <= x && userNumber > 0) {
     userArray.push(userNumber);
   } else {
     alert(
       "Errore. Questo numero è già stato inserito oppure non è compreso tra 1 e " +
         x +
-        "."
+        ". Premi OK e riprova."
     );
   }
 
