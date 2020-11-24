@@ -1,12 +1,11 @@
+alert(
+  'Campo Minato by Andrea Di Cataldi ©\n\nLo scopo del gioco è inserire un numero cercando di evitare le 16 "mine" numeriche piazzate dal computer.\nNon è possibile inserire un numero già inserito in precedenza.\nBuona fortuna!'
+);
 var howHard = Number(
   prompt(
     "Choose your destiny...\n\nEASY - Inserisci: 0\nMEDIUM - Inserisci: 1\nHARD - Inserisci: 2"
   )
 );
-alert(
-  'Lo scopo del gioco è inserire un numero cercando di evitare le 16 "mine" numeriche piazzate dal computer.\nNon è possibile inserire un numero già inserito in precedenza.\nBuona fortuna!'
-);
-
 switch (howHard) {
   case 0:
     x = 100;
@@ -17,7 +16,9 @@ switch (howHard) {
   case 2:
     x = 50;
     break;
-}
+  default:
+    alert("Devi inserire un numero da 0 a 2.");
+  }
 
 var rndNumbers = [];
 while (rndNumbers.length < 16) {
