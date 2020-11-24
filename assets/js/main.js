@@ -6,14 +6,17 @@ var howHard = Number(
 alert(
   'Lo scopo del gioco è inserire un numero cercando di evitare le 16 "mine" numeriche piazzate dal computer.\nNon è possibile inserire un numero già inserito in precedenza.\nBuona fortuna!'
 );
-if (howHard == 0) {
-  x = 100;
-} else if (howHard == 1) {
-  x = 80;
-} else if (howHard == 2) {
-  x = 50;
-} else {
-  alert("Devi inserire un valore tra 0 e 2.");
+
+switch (howHard) {
+  case 0:
+    x = 100;
+    break;
+  case 1:
+    x = 80;
+    break;
+  case 2:
+    x = 50;
+    break;
 }
 
 var rndNumbers = [];
@@ -28,13 +31,15 @@ for (var i = 0; userArray.length < 84; i++) {
   var userNumber = Number(
     prompt("Inserisci un numero da 1 a " + x + " che non hai ancora inserito.")
   );
-  if (((!userArray.includes(userNumber)) && userNumber < x && userNumber > 0)) {
+  if (!userArray.includes(userNumber) && userNumber < x && userNumber > 0) {
     userArray.push(userNumber);
   } else {
-    alert("Errore. Questo numero è già stato inserito oppure non è compreso tra 1 e " + x + ".");
+    alert(
+      "Errore. Questo numero è già stato inserito oppure non è compreso tra 1 e " +
+        x +
+        "."
+    );
   }
-
-
 
   if (rndNumbers.includes(userNumber)) {
     alert("Hai perso!");
