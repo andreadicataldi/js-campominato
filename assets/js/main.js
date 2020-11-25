@@ -18,7 +18,7 @@ switch (howHard) {
     break;
   default:
     alert("Devi inserire un numero da 0 a 2.");
-  }
+}
 
 var rndNumbers = [];
 while (rndNumbers.length < 16) {
@@ -28,7 +28,7 @@ while (rndNumbers.length < 16) {
 // console.log(rndNumbers);
 
 var userArray = [];
-for (var i = 0; userArray.length < 84; i++) {
+for (var i = 0; userArray.length < x - 16; i++) {
   var userNumber = Number(
     prompt("Inserisci un numero da 1 a " + x + " che non hai ancora inserito.")
   );
@@ -64,5 +64,6 @@ for (var i = 0; userArray.length < 84; i++) {
         "%"
     );
     alert('Le "mine" del computer erano: ' + rndNumbers.join(" "));
+    break;
   }
 }
